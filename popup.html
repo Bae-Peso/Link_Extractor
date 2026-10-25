@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <form id="search-form">
+    <input id="find-word" type="text" placeholder="例: google.com" autofocus>
+    <button id="extract-btn" type="submit">Extract</button>
+  </form>
+
+  <p id="status"></p>
+
+  <textarea id="result" readonly></textarea>
+
+  <div class="actions">
+  <!--  <button id="save-btn" type="button">txt保存</button> 추가할 가능성이 있는 기능  -->
+    <button id="open-btn" type="button">Open all in new tab</button>
+    <button id="close-btn" type="button">Close</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
