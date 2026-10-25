@@ -2,7 +2,12 @@
 
 閲覧中のページから、指定したキーワードを含むリンクをまとめて抽出する Firefox 拡張機能です。
 
-例えば、掲示板やブログに貼られた `drive.google.com` のリンクだけを一覧にして、まとめて新しいタブで開く、といった使い方を想定しています。
+**インストール:** [Firefox Add-ons（AMO）](https://addons.mozilla.org/firefox/addon/link_extractor/)
+
+例えば、Google で「MacBook Pro」を検索した結果ページで `apple.co` と入力すると、ページ内の Apple 関連のリンクだけを一覧にして、まとめて新しいタブで開けます。
+
+<img width="364" height="323" alt="Screenshot_20261025_161914" src="https://github.com/user-attachments/assets/d5870272-d48b-4c04-a07e-2dca6240ba78" />
+
 
 ## 主な機能
 
@@ -14,12 +19,21 @@
   - 10 件を超える場合は警告を表示し、もう一度押したときだけ開く
   - 開いている途中は進捗（`Opened 5 of 23 links`）を表示
 
-## 使い方（開発版の読み込み）
+## インストール
+
+[Firefox Add-ons のページ](https://addons.mozilla.org/firefox/addon/link_extractor/) から「Firefox へ追加」でインストールできます。
+
+## 使い方
+
+1. ツールバーのアイコンをクリック
+2. キーワード（例: `apple.co`）を入力して「Extract」
+3. 必要に応じて結果をコピー、または「Open all」で一括オープン
+
+## 開発版の読み込み
 
 1. Firefox のアドレスバーに `about:debugging` と入力
 2. 「この Firefox」→「一時的なアドオンを読み込む」
 3. このフォルダの `manifest.json` を選択
-4. ツールバーのアイコンをクリックし、キーワードを入力して「Extract」
 
 ※ 一時的なアドオンは Firefox を終了すると消えるため、再起動後はもう一度読み込みます。
 
